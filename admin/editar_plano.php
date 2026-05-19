@@ -4,13 +4,9 @@ require_once '../includes/header.php';
 
 // Verificar se o usuário está logado e é admin
 if (!isLoggedIn() || !isAdmin()) {
-<<<<<<< HEAD
     redirect('/gtech');
 }/login.php
-=======
-    redirect('/G-tech/login.php');
-}
->>>>>>> ddad821cb3b6516017aec7c8978011acae1c87c8
+
 
 // Exibição de erros
 ini_set('display_errors', 1);
@@ -176,11 +172,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <button type="submit" class="btn btn-primary">
                         <i class="bi bi-save"></i> Salvar Alterações
                     </button>
-<<<<<<< HEAD
                     <a href="/gtech/admin/planos.php" class="btn btn-secondary">
-=======
-                    <a href="/G-tech/admin/planos.php" class="btn btn-secondary">
->>>>>>> ddad821cb3b6516017aec7c8978011acae1c87c8
+
                         <i class="bi bi-x-circle"></i> Cancelar
                     </a>
                 </div>
