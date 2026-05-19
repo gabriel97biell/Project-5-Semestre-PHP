@@ -4,11 +4,8 @@ require_once 'includes/config.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     $_SESSION['error'] = "Requisição inválida.";
-<<<<<<< HEAD
     header('Location: /gtech/planos.php');
-=======
-    header('Location: /G-tech/planos.php');
->>>>>>> ddad821cb3b6516017aec7c8978011acae1c87c8
+
     exit;
 }
 
@@ -18,11 +15,8 @@ $metodo = $_POST['metodo'] ?? null;
 
 if (!$assinatura_id || !$valor || !$metodo) {
     $_SESSION['error'] = "Dados incompletos para processar o pagamento.";
-<<<<<<< HEAD
     header('Location: /gtech/planos.php');
-=======
-    header('Location: /G-tech/planos.php');
->>>>>>> ddad821cb3b6516017aec7c8978011acae1c87c8
+
     exit;
 }
 
@@ -49,19 +43,13 @@ try {
     $pdo->commit();
 
     $_SESSION['success'] = "Pagamento realizado com sucesso!";
-<<<<<<< HEAD
     header('Location: /gtech/user/dashboard.php?payment=success');
-=======
-    header('Location: /G-tech/user/dashboard.php?payment=success');
->>>>>>> ddad821cb3b6516017aec7c8978011acae1c87c8
+
     exit;
 } catch (PDOException $e) {
     $pdo->rollBack();
     $_SESSION['error'] = "Erro ao registrar pagamento: " . $e->getMessage();
-<<<<<<< HEAD
     header('Location: /gtech/user/dashboard.php?payment=error');
-=======
-    header('Location: /G-tech/user/dashboard.php?payment=error');
->>>>>>> ddad821cb3b6516017aec7c8978011acae1c87c8
+
     exit;
 }
