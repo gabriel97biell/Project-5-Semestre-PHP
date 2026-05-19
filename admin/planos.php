@@ -30,11 +30,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_plano'])) {
         $stmt->execute([$nome, $descricao, $preco, $armazenamento, $largura_banda, $sites, $contas_email, $banco_dados, $dominio_gratis]);
         
         $_SESSION['success'] = "Plano adicionado com sucesso!";
-<<<<<<< HEAD
         redirect('/planos.php');
-=======
-        redirect('/admin/planos.php');
->>>>>>> ddad821cb3b6516017aec7c8978011acae1c87c8
+
     } catch (PDOException $e) {
         $error = "Erro ao adicionar plano: " . $e->getMessage();
     }
@@ -55,12 +52,9 @@ if (isset($_GET['delete'])) {
             $stmt->execute([$id]);
             $_SESSION['success'] = "Plano deletado com sucesso!";
        
-        
-<<<<<<< HEAD
-        redirect('/planos.php');
-=======
-        redirect('/admin/planos.php');
->>>>>>> ddad821cb3b6516017aec7c8978011acae1c87c8
+       
+       redirect('/planos.php');
+
     } catch (PDOException $e) {
         $error = "Erro ao deletar plano: " . $e->getMessage();
     }
