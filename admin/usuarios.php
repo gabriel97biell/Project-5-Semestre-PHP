@@ -37,7 +37,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
         }
         
         
+<<<<<<< HEAD
         redirect('/usuarios.php');
+=======
+        redirect('/admin/usuarios.php');
+>>>>>>> ddad821cb3b6516017aec7c8978011acae1c87c8
         
     } catch (PDOException $e) {
         $error = "Erro ao processar ação: " . $e->getMessage();

@@ -55,7 +55,7 @@ require_once 'includes/header.php';
                         </div>
                         <div class="d-grid gap-2">
                             <button type="submit" class="btn btn-primary">Criar Conta</button>
-                            <a href="/G-tech/login.php" class="btn btn-outline-secondary">Já tenho uma conta</a>
+                            <a href="/gtech/login.php" class="btn btn-outline-secondary">Já tenho uma conta</a>
                         </div>
                     </form>
                 </div>

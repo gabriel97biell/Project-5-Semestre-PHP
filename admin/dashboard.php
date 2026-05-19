@@ -131,11 +131,19 @@ require_once '../includes/header.php';
                 </div>
                 <div class="card-body">
                     <div class="d-grid gap-2">
+<<<<<<< HEAD
                         <a href="<?= BASE_URL ?>/planos.php" class="btn btn-primary">
                             <i class="bi bi-plus-circle-fill me-2"></i> Gerenciar Planos
                         </a>
 
                         <a href="<?= BASE_URL ?>/usuarios.php" class="btn btn-secondary">
+=======
+                        <a href="<?= BASE_URL ?>/admin/planos.php" class="btn btn-primary">
+                            <i class="bi bi-plus-circle-fill me-2"></i> Gerenciar Planos
+                        </a>
+
+                        <a href="<?= BASE_URL ?>/admin/usuarios.php" class="btn btn-secondary">
+>>>>>>> ddad821cb3b6516017aec7c8978011acae1c87c8
                             <i class="bi bi-people-fill me-2"></i> Gerenciar Usuários
                         </a>
 

@@ -133,7 +133,11 @@ require_once '../includes/header.php';
                             </ul>
                         </div>
                         <div class="card-footer bg-transparent">
+<<<<<<< HEAD
                             <a href="/gtech/planos.php" class="btn btn-outline-primary w-100">Assinar Plano</a>
+=======
+                            <a href="/G-tech/planos.php" class="btn btn-outline-primary w-100">Assinar Plano</a>
+>>>>>>> ddad821cb3b6516017aec7c8978011acae1c87c8
                         </div>
                     </div>
                 </div>

@@ -159,7 +159,11 @@ require_once 'includes/header.php';
             // Simular processamento do pagamento (7 segundos)
             setTimeout(function() {
 
+<<<<<<< HEAD
                 window.location.href = '/gtech/user/dashboard.php?payment=success';
+=======
+                window.location.href = '/G-tech/user/dashboard.php?payment=success';
+>>>>>>> ddad821cb3b6516017aec7c8978011acae1c87c8
             }, 7000);
         });
     });
