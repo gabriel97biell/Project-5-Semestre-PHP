@@ -1,0 +1,118 @@
+ /* Vídeo */
+ .video-section {
+  background-color: #eef3f6;
+  padding: 40px 60px;
+  text-align: center;
+}
+
+.video-section h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+  border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #003366, #005599);
+  padding: 10px 30px;
+  color: white;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.header .btn-voltar a {
+  background-color: white;
+  color: #003366;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.header .btn-voltar a:hover {
+  background-color: #eee;
+}
+
+/* Seção sobre nós */
+.sobre-nos {
+  padding: 40px 60px;
+  background-color: #fff;
+}
+
+.sobre-nos h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.sobre-nos p {
+  margin-bottom: 15px;
+}
+
+/* Cards */
+.cards-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 30px 60px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #005599;
+  margin-bottom: 10px;
+}
